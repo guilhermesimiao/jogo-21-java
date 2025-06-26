@@ -23,7 +23,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
         // Vetores e variaveis
-        String[] valores = {"A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "A"};
+        String[] valores = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
         String[] naipes = {"♠", "♥", "♦", "♣"};
         String[] baralho = new String[52];
         int posicaoVetor = 0;
