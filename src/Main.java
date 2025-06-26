@@ -23,7 +23,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
         // Vetores e variaveis
-        String[] valores = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
+        String[] valores = {"A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "A"};
         String[] naipes = {"♠", "♥", "♦", "♣"};
         String[] baralho = new String[52];
         int posicaoVetor = 0;
@@ -73,7 +73,14 @@ public class Main {
                     String valor = carta.substring(0, carta.length() - 1);
 
                     if (valor.equals("A")) {
-                        pontos[k] += 11;
+
+                        if (pontos[k] + 11 > 21){
+                            pontos[k] += 1;
+
+                        }else {
+                            pontos[k] += 11;
+
+                        }
                     } else if (valor.equals("J") || valor.equals("Q") || valor.equals("K")) {
                         pontos[k] += 10;
                     } else {
